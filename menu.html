@@ -1,0 +1,87 @@
+﻿<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>All Blue Official</title>
+<link rel="stylesheet" type="text/css" href="css/style2.css">
+</head>
+<body>
+
+<h1><a href="index.html">All Blue</h1>
+
+<ul class="global-nav">
+	<li><a href="index.html">HOME</a></li>
+	<li><a href="Aboutus.html">ABOUT US</a></li>
+	<li><a href="Menu.html">MENU</a></li>
+	<li><a href="access.html">ACCESS</a></li>
+	<li><a href="contact.html">CONTACT</a></li>
+</ul>
+<h2>MENU</h2>
+<table class="menu2">
+<tr>
+<th><a href="picture/menu2.png" class="picture"><img src="picture/menu2.png" width="750" height="590" alt="menu"></a></th>
+<td><h3>Magical fish</h3>
+<p>If you eat this, it is said that you can get younger.<br>
+Of course, it tastes very good! Yummy, yummy,yummy!<br>
+<strong>$Free</strong></p></td>
+</tr>
+</table>
+<table class="menu3">
+<tr>
+<td><h3>The legend meat</h3>
+<p>Do you know "Wagyu" ?<br>
+It is the very rare meat.When you put it into your mouth,<br> it will be melting!
+If you eat this, <br>you perhaps fall because of it's deliciousness!<br> Be careful.<br>
+<strong>$Free</strong></p></td>
+<th><a href="picture/menu3.png" class="picture"><img src="picture/menu3.png" width="750" height="590" alt="menu"></a></th>
+</tr>
+</table>
+<table class="menu4">
+<tr>
+<th><a href="picture/menu1.png" class="picture"><img src="picture/menu1.png" width="750" height="590" alt="menu"></a></th>
+<td><h3>Super fresh vegetable salad</h3>
+<p>Yes, that's it! This is just what you wanted!Don't miss it!<br>
+It is heathy and nutrient-rich.<br>
+<strong>$Free</strong></p></td>
+</tr>
+</table>
+<table class="menu5">
+<tr>
+<td><h3>The phantom pasta</h3>
+This pasta is made from phantom flour!<br>
+The flour can get only in our field.<br> Although it tastes the best, don't trespass on my field. haha<br>
+<strong>$Free</strong></p>
+<th><a href="picture/menu4.png" class="picture"><img src="picture/menu4.png" width="730" height="590" alt="menu"></a></th>
+</tr>
+</table>
+<p class="copy">&copy;Copyright All Blue. All rights reserved.</p></td>
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script>
+$('.menu2').hide();
+$('.menu3').hide();
+$('.menu4').hide();
+$('.menu5').hide();
+
+$(function(){
+	
+	$('.menu2').fadeIn(2000);
+	$('.menu3').fadeIn(3000);
+	$('.menu4').fadeIn(4000);
+	$('.menu5').fadeIn(5000);
+	
+	$("body").append("<div id='glayLayer'></div><div id='overLayer'></div>");
+
+	$("#glayLayer").click(function(){
+		$(this).hide();
+		$("#overLayer").hide();
+	});
+
+	$("a.picture").click(function(){
+		$("#glayLayer").show();
+		$("#overLayer").show().html("<img src='"+$(this).attr("href")+"'/>");
+		return false;
+	});
+});
+</script>
+</body>
+</html>

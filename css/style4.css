@@ -1,0 +1,163 @@
+﻿@charset "utf-8";
+
+body{
+	background-color: #ccffff;
+	width:1600px;
+	text-align:center;
+	margin:10px auto auto auto;
+}
+
+h1{
+	padding-top:20px;
+	margin: 30px 30px 30px 50px;
+	font-size: 50px;
+	width:200px;
+}
+
+h1 a{
+	text-decoration: none;
+}
+
+.global-nav {
+	float:right;
+	margin-top: -75px;
+}
+.global-nav li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 40px;
+	font-size:40px;
+}
+
+.global-nav a{
+	text-decoration:none;
+}
+
+.global-nav li a:link{
+	font-size:40px;
+}
+
+.global-nav li a:visited{
+	font-size:40px;
+}
+
+.global-nav li a:hover{	
+	font-size:42px;
+}
+
+.global-nav li a:active{
+	font-size:42px;
+}
+
+h2{
+	text-align:left;
+	font-size:34px;
+	margin-left:50px;
+}
+
+h3{
+	text-align:left;
+	font-size:34px;
+	margin:20px auto 0px 50px;
+}
+
+
+h4{
+	font-size:28px;
+	text-align:left;
+	margin-left:50px;
+}
+
+.description{
+	font-size:28px;
+	margin:20px auto 20px auto;
+}
+
+.description td{
+	padding-left:35px;
+	text-align:left;
+}
+
+.description td strong{
+	font-size:36px;
+	margin-bottom:10px;
+}
+
+.shioduke{
+	float:left;
+	margin:20px 20px 20px 70px;
+	width:700px;
+}
+
+.ohmin{
+	float:left;
+	margin:20px 50px 20px 10px;
+	width:700px;
+}
+
+.about-shioduke{
+	text-align:left;
+	font-size:22px;
+	margin-left:50px;
+}
+
+.about-ohmin{
+	text-align:left;
+	font-size:22px;
+	margin-left:50px;
+}
+
+.about-shioduke ul{
+	list-style:none;
+	padding-left:0px;
+	display: table;
+}
+
+.about-shioduke li:after{
+	content:"";
+	display:block;
+	margin-bottom:0.5em;
+}
+
+.about-shioduke li{
+	display: table-row;
+}
+
+.about-shioduke li:before{
+	content:"●";
+	display:table-cell;
+	padding-right:0.4em;
+}
+
+.about-ohmin ul{
+	list-style:none;
+	padding-left:0px;
+	display: table;
+}
+
+.about-ohmin li:after{
+	content:"";
+	display:block;
+	margin-bottom:0.5em;
+}
+
+.about-ohmin li{
+	display: table-row;
+}
+
+.about-ohmin li:before{
+	content:"●";
+	display:table-cell;
+	padding-right:0.4em;
+}
+
+.shioduke-ohmin{
+	opacity:0.1;
+	transform:translate(0,100px);
+	transition:all 900ms;
+}
+
+.shioduke-ohmin.scrollin{
+	opacity:1;
+	transform:translate(0,0);
+}

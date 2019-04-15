@@ -1,0 +1,85 @@
+﻿<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>All Blue Official</title>
+<link rel="stylesheet" type="text/css" href="css/style4.css">
+
+</head>
+<body>
+
+<h1><a href="index.html">All Blue</h1>
+
+<ul class="global-nav">
+	<li><a href="index.html">HOME</a></li>
+	<li><a href="Aboutus.html">ABOUT US</a></li>
+	<li><a href="Menu.html">MENU</a></li>
+	<li><a href="access.html">ACCESS</a></li>
+	<li><a href="contact.html">CONTACT</a></li>
+</ul>
+<h2>About us</h2>
+<table class="description">
+<tr>
+<th><img src="picture/restaurant4.png" width="800" height="605" alt="restaurant"></img></th>
+<td><p><strong>About All Blue</strong><br>
+All Blue was established in 2018.We are rookies.<br>
+Our dream is to be No.1 of a taste all over the world.<br>
+Nice to meet you!</p></td>
+</tr>
+</table>
+<h3>About our chef</h3>
+<div class="shioduke-ohmin">
+<div class="shioduke">
+<img src="picture/shioduke.png" width="600" height="512" alt="shioduke"></img>
+<h4>Master "Shioduke"</h4>
+<div class="about-shioduke">
+<p>【Supervisior】</p>
+<ul>
+	<li>French food</li>
+	<li>Itarian food</li>
+	<li>Indian food</li>
+	<li>Japanese food</li>
+	<li>Chinese food</li>
+</ul>
+<p>【Hobby】</p>
+<ul>
+	<li>Cryptocurrency investment</li>
+	<li>Equity investment</li>
+	<li>Twitter<a href="https://twitter.com/WtKZ3UacgqTq75S" target="_blank">(@WtKZ3UacgqTq75S)</a></li>
+</ul>
+</div>
+</div>
+<div class="ohmin">
+<img src="picture/Ohmin.png" width="600" height="512" alt="ohmin"></img>
+<h4>Pupil "Ohmin"</h4>
+<div class="about-ohmin">
+<p>【Supervisior】</p>
+<ul>
+	<li>Japanese food</li>
+</ul>
+<p>【Hobby】</p>
+<ul>
+	<li>Talking</li>
+	<li>Twitter<a href="https://twitter.com/Ooooooomin_365" target="_blank">(@Ooooooomin_365)</a></li>
+</ul>
+</div>
+</div>
+</div>
+<p class="copy">&copy;Copyright All Blue. All rights reserved.</p>
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script>
+$(function(){
+	$(window).scroll(function(){
+		$('.shioduke-ohmin').each(function(){
+			var elemPos = $(this).offset().top;
+			var scroll = $(window).scrollTop();
+			var windowHeight = $(window).height();
+			if(scroll > elemPos - windowHeight + 300){
+				$(this).addClass('scrollin');
+			}
+		});
+	});
+});
+</script>
+</body>
+</html>

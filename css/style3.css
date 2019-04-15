@@ -1,0 +1,72 @@
+﻿@charset "utf-8";
+
+body{
+	background-color: #ccffff;
+	width:1600px;
+	text-align:center;
+	margin:10px auto auto auto;
+}
+
+h1{
+	padding-top:20px;
+	margin: 30px 30px 30px 50px;
+	font-size: 50px;
+	width:200px;
+}
+
+h1 a{
+	text-decoration: none;
+}
+
+.global-nav {
+	float:right;
+	margin-top: -75px;
+}
+.global-nav li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 40px;
+	font-size:40px;
+}
+
+.global-nav a{
+	text-decoration:none;
+}
+
+.global-nav li a:link{
+	font-size:40px;
+}
+
+.global-nav li a:visited{
+	font-size:40px;
+}
+
+.global-nav li a:hover{	
+	font-size:42px;
+}
+
+.global-nav li a:active{
+	font-size:42px;
+}
+
+h2{
+	text-align:left;
+	font-size:34px;
+	margin-left:50px;
+
+}
+
+.accessmap{
+	font-size:32px;
+	text-align:center;
+	margin:20px auto 20px auto;
+}
+
+.accessmap td{
+	padding-left:30px;
+}
+
+.copy{
+	text-align:left;
+	margin-left:50px;
+}

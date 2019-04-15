@@ -1,0 +1,87 @@
+﻿@charset "utf-8";
+
+body{
+	background-color: #ccffff;
+	width:1600px;
+	text-align:center;
+	margin:10px auto auto auto;
+}
+
+h1{
+	padding-top:20px;
+	margin: 30px 30px 30px 50px;
+	font-size: 50px;
+	width:200px;
+}
+
+h1 a{
+	text-decoration: none;
+}
+
+.global-nav {
+	float:right;
+	margin-top: -75px;
+}
+.global-nav li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 40px;
+	font-size:40px;
+}
+
+.global-nav a{
+	text-decoration:none;
+}
+
+.global-nav li a:link{
+	font-size:40px;
+}
+
+.global-nav li a:visited{
+	font-size:40px;
+}
+
+.global-nav li a:hover{	
+	font-size:42px;
+}
+
+.global-nav li a:active{
+	font-size:42px;
+}
+
+form div{
+	padding:12px;
+	border-bottom: 1px dashed #d6c2b5;
+}
+
+select{
+	width:480px;
+	height:25px;
+}
+
+select[name=kind]{
+	font-size:20px;
+}
+
+label{
+	font-size:24px;
+}
+
+input[name=subject]{
+	width:480px;
+}
+
+textarea{
+	width:30em;
+	height:6em;
+}
+
+input[type=submit]{
+	margin: 20px 12px;
+	width:30em;
+	font-size:20px;
+}
+
+.caution{
+	font-size:25px;
+}
